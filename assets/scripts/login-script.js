@@ -9,12 +9,17 @@ const loginFormElement = document.querySelector('#loginForm');
 const inputEmailElement = document.querySelector('#inputEmail');
 const inputPasswordElement = document.querySelector('#inputPassword');
 
+/*
+email dan Password
+ */
 const expectedEmail = 'admin@dicoding.com';
 const expectedPassword = 'superpassword';
 
 loginFormElement.addEventListener('submit', function(event) {
   event.preventDefault();
-
+/*
+ Value email dan Password
+ */
   const email = inputEmailElement.value;
   const password = inputPasswordElement.value;
   if (email == expectedEmail && password == expectedPassword) {
